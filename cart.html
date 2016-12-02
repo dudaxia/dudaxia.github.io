@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车 查看购物车</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/topbar.css"/>
+		<link rel="stylesheet" href="css/cart.css" />
+	</head>
+	<body>
+		<!-- 顶部导航 -->
+		<div class='topbar-wrapper'>
+			<!-- JS create someCode -->
+		</div>
+		<div class="header">
+			<div class="wrapper clear">
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/shop_212x40.jpg" title="logo"/>
+						<img src="images/logo-text.png" title="logo-text"/>
+					</a>
+				</div>
+				<div class="flow-step">
+					<ul class="flow-step-1">
+						<li class="step-2">去下单</li>
+						<li class="step-3">去付款</li>
+						<li class="step-4">确认收货</li>
+						<li class="step-5">评价</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="cart-form">
+				<div class="cart-state">
+					<p>
+						购物车状态
+						<em>（<i class="selected-goods-amount">0</i>/30）</em>
+					</p> 
+					<div class="total">
+						<span>
+							总计（不含运费）：
+							<em>¥</em>
+							<em class="total-cart-price">0.00</em>
+						</span>
+						<input value="去结算" type="submit" name="submitCart">
+					</div>
+				</div>
+				<div class="order-table">
+					<div class="cart-goods-title">
+						<ul class="shop-title clear">
+							<li class="th1">
+								<input type="checkbox" class="all" />
+								<span>全选<span>
+							</li>
+							<li class="th2">所选商品</li>
+							<li class="th3">单价（元）</li>
+							<li class="th4">数量</li>
+							<li class="th5">优惠</li>
+							<li class="th6">小计（元）</li>
+							<li class="th7">操作</li>
+						</ul>
+					</div>
+					<div class="cart-store-infor clear">
+						<div class="shop-name clear">
+							<div class="shop-name-info clear">
+								<!-- <input type="checkbox" class="all"> -->
+								店铺：
+								<a href="#">瑞意摄影器材</a>
+							</div>
+							<div class="contact">
+								<a href="#">
+									<img src="images/tag-security.png"/>
+								</a> 
+							</div>
+							<div class="contact">
+								<a href="#">
+									<img src="images/pa.jpg"/>
+								</a> 
+							</div>
+						</div>
+						<div class="my-list-wrapper">
+						<!-- <ul>
+							<li class="store-item">
+								<div class="goods-detail clear">
+									<div class="s-info">
+										<input type="checkbox"/>
+										<a href="#" class="goods-img"><img src="images/cart-goods.jpg"/></a>
+										<div class="inforbox">
+											<h3 class="tit">
+												<a href="#">【顺丰包邮】苹果 iPhone 7（全网通）全新未激活国行三网通4.7寸屏</a>
+											</h3>
+											<div class="security clear">
+												<a href="#" class="security-a"></a>
+												<a href="#" class="security-b"></a>
+												<a href="#" class="security-c"></a>
+												<a href="#" class="security-d"></a>
+											</div>
+											<p>颜色：黑色</p>
+											<div class="info-con">
+												<span>套装：官方标配</span>
+											</div>
+										</div>
+									</div>
+									<div class="s-price">
+										<em>6088</em>
+									</div>
+									<div class="s-amount">
+										<span class="decrease">-</span>
+										<input type="text" class="goods-amount" value="1"/>
+										<span class="increase">+</span>
+									</div>
+									<div class="s-agio">
+										<div class="agio">--</div>
+									</div>
+									<div class="s-totle">6088</div>
+									<div class="s-del">
+										<a href="javascript:;">移入收藏夹</a>
+										<a href="javascript:;" class="delete-goods">删除</a>
+									</div>
+								</div>
+							</li>
+						</ul> -->
+						</div>
+					</div>
+				</div>
+				<div class="total-price">
+					商品总价
+					<span>（不含运费）</span>
+					：
+					<em>¥</em>
+					<em class="total-cart-price">0.00</em>
+				</div>
+				<div class="order-foot">
+					<label>
+						<input type="checkbox" class="all">
+						全选
+					</label>
+					<a href="#">批量删除</a>
+					<a href="#" class="go-shopping">&lt;&lt;继续购物</a>
+					<input class="accounting-btn" type="submit" value="去结算">
+				</div>
+			</div>
+		</div>
+		<div id="goods-recommend" class="wrapper">
+			<ul class="goods-tab">
+				<li class="cur">猜你喜欢</li>
+			</ul>
+			<div class="modgoods-list">
+				<ul class="clear">
+					<li>
+						<a href="#">
+							<img src="images/computer.jpg"/>
+							<p>联想笔记本电脑包15.6/14寸 </p>
+						</a>
+						<div class="price">¥49.00</div>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/computer.jpg"/>
+							<p>联想笔记本电脑包15.6/14寸 </p>
+						</a>
+						<div class="price">¥49.00</div>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/computer.jpg"/>
+							<p>联想笔记本电脑包15.6/14寸 </p>
+						</a>
+						<div class="price">¥49.00</div>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/computer.jpg"/>
+							<p>联想笔记本电脑包15.6/14寸 </p>
+						</a>
+						<div class="price">¥49.00</div>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/computer.jpg"/>
+							<p>联想笔记本电脑包15.6/14寸 </p>
+						</a>
+						<div class="price">¥49.00</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer wrapper">
+			<p class="links">
+				<a href="#">关于商城</a>
+				|
+				<a href="#">营销中心</a>
+				|
+				<a href="#">服务中心</a>
+				|
+				<a href="#">联系我们</a>
+				|
+				<a href="#">发展历程</a>
+				|
+				<a href="#">媒体报道</a>
+			</p>
+			<p class="copyright">
+				©2016中关村在线 版权所有. 京ICP备09041801号-182 
+				<a href="#">京ICP证010391号</a>
+			</p>
+			<div class="authentication">
+				<a href="#">
+					<img src="images/beian.png"/>
+				</a>
+				<a href="#">
+					<img src="images/jingcha.png"/>
+				</a>
+				<a href="#">
+					<img src="images/cert.png"/>
+				</a>
+			</div>
+		</div>
+
+		
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/cart.js"></script>
+	</body>
+</html>

@@ -1,0 +1,730 @@
+@charset 'utf-8';  
+
+.wrapper{
+	margin: 0 auto;
+	width: 1200px;
+}
+
+/*header*/
+.header{
+	padding-top: 30px;
+}
+.header .logo{
+	float: left;
+	width: 360px;
+	padding-left: 5px;
+}
+.header .logo a{
+	display: block;
+	float: left;
+	width: 180px;
+	height: 50px;
+	background: url(../images/logo_180x50.png);
+}
+.header .logo p{
+	float: left;
+	font: 14px/44px "微软雅黑";
+	color: #666;
+	border-left: 1px solid #eee;
+	padding-left: 10px;
+	margin: 3px 0 0 10px;
+}
+/*搜索框*/
+.header .search-box{
+	padding: 9px 30px 0;
+	float: left;
+}
+.header .search-box .search{
+	width: 536px;
+	height: 32px;
+	border: 2px solid #c40000;
+}
+.header .search-box .search input{
+	outline: none;
+	border: 0;
+}
+.header .search-box .search .search-text{
+	float: left;
+	width: 427px;
+	height: 20px;
+	font: 14px/20px "微软雅黑";
+	color: #666;
+	padding: 6px 10px;
+}
+.header .search-box .search .search-btn{
+	float: left;
+	width: 89px;
+	height: 32px;
+	font: 16px/32px "微软雅黑";
+	color: #fff;
+	text-align: center;
+	background-color: #c40000 ;
+	cursor: pointer;
+}
+.header .search-box .hot-search{
+	padding-top: 7px;
+}
+.header .search-box .hot-search a{
+	margin-right: 15px;
+	font: 12px/18px "微软雅黑";
+	color: #999;
+}
+.header .search-box .hot-search a:hover{
+	color: #f60;
+	text-decoration: underline;
+}
+.header .ad-box{
+	float: left;
+	margin-left: 40px;
+	width: 180px;
+	height: 60px;
+}
+.header .ad-box img{
+	width: 180px;
+	height: 60px;
+}
+/*nav*/
+.nav-box{
+	position: relative;
+	border-bottom: 2px solid #c40000;
+	margin-top: 20px;
+}
+.nav-box .category-nav-container{
+	position: relative;
+	padding-left: 34px;
+	width: 200px;
+	height: 34px;
+	background-color: #c40000;
+	cursor: pointer;
+}
+.nav-box .category-nav-container h2{
+	font: 14px/34px "微软雅黑";
+	color: #fff;
+}
+.nav-box .category-nav-container .icon{
+	position: absolute;
+	top: 14px;
+	right: 20px;
+	width: 10px;
+	height: 6px;
+	background: url(../images/zolcom_list_ico.png) 0 0;
+}
+.nav-box .nav{
+	position: absolute;
+	top: 0;
+	left: 235px;
+	height: 30px;
+}
+.nav-box .nav li{
+	float: left;
+	height: 30px;
+	
+	padding: 0 20px;
+}
+.nav-box .nav li a{
+	font: 16px/30px "微软雅黑";
+	color: #333;
+}
+.nav-box .nav li a:hover{
+	color: #f60;
+}
+.nav-box .nav-tips{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 30px;
+	line-height: 30px;
+}
+.nav-box .nav-tips a {
+	color: #f60;
+	font-size: 16px;
+} 
+.nav-box .nav-tips a:hover {
+	text-decoration: underline;
+}
+/*详情顶部*/
+.zs-wrapper .zs-bread-title{
+	font: 12px/32px "微软雅黑";
+	color: #999;
+}
+.zs-wrapper .zs-bread-title a{
+	font: 12px/32px "微软雅黑";
+	color: #333;
+}
+/*商品展示*/
+.zs-wrapper .zs-bread-crumbs{
+	border: 1px solid #ededed;
+}
+.zs-bread-crumbs .zs-deal-detail{
+	float: left;
+	width: 990px;
+}
+/* 放大镜区域 */
+.zs-bread-crumbs .zs-deal-detail .zs-focus{
+	position: relative;
+	float: left;
+	width: 400px;
+	padding: 10px 0 0 20px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-big-pic{
+	position: relative;
+	width: 400px;
+	height: 400px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-big-pic .magicZoomPup{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 200px;
+	background-color: #fff;
+	opacity: 0.5;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zoom-big{
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	left: 420px;
+	top: 10px;
+	width: 400px;
+	height: 400px;
+	z-index: 11;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zoom-big img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 800px;
+	height: 800px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-focus-thumb{
+	width: 400px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list{
+	width: 100%;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list li{
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin-right: 10px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list li img{
+	width: 70px;
+	height: 70px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list li.active{
+	border: 2px solid #c00;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list li a{
+	margin: 0;
+	padding: 0;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-action{
+	position: relative;
+	padding: 15px 0;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-action i{
+	opacity: 0.5;
+	width: 15px;
+	height: 20px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-action .zs-collect{
+	margin-right: 20px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-action a{
+	padding-left: 20px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-action .zs-collect i{
+	position: absolute;
+	left: 0;
+	top: 20px;
+	background: url(../images/bg.png) -46px -290px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-action .zs-collect:hover{
+	color: #c00;
+	text-decoration: underline;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-action .zs-collect:hover i{
+	opacity: 1;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-action .zs-share i{
+	position: absolute;
+	left: 92px;
+	top: 20px;
+	background: url(../images/bg.png) -46px -314px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-action .zs-share:hover{
+	color: #c00;
+	text-decoration: underline;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-focus .zs-action .zs-share:hover i{
+	opacity: 1;
+}
+/* 商品选择 数量 颜色 套餐 */
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap{
+	float: left;
+	margin-left: 15px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap h3{
+	font: 16px/22px "微软雅黑";
+	color: #333;
+	padding-top: 7px;
+	margin-top: 10px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-price-panel{
+	position: relative;
+	width: 510px;
+	height: 30px;
+	padding: 5px 10px;
+	margin-top: 18px;
+	background-color: #f7f7f7;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-price-panel span{
+	line-height: 20px;
+	color: #666;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-price-panel em{
+	color: #c00;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-price-panel .zs-price{
+	position: absolute;
+	left: 80px;
+	font: 700 24px/30px "微软雅黑";
+	color: #c00;
+}
+/*配送 评价 服务保障*/
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight{
+	padding: 4px 0 4px 10px;
+	height: 25px;
+	line-height: 25px;
+	margin-top: 10px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight .place-choice{
+	position: relative;
+	display: inline-block;
+	width: 44px;
+	padding: 0 6px;
+	border: 1px solid #e6e6e6;
+	margin-right: 10px;
+	color: #333;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight .place-choice i{
+	position: absolute;
+	right: 6px;
+	width: 20px;
+	height: 20px;
+	background: url(../images/icon20150707.png) no-repeat 0 0 ;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight del{
+	color: #333;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight u{
+	font-weight: 700;
+	color: #333;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight-con{
+	position: relative;
+	height: 33px;
+	line-height: 33px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight-con span{
+	margin-left: 8px;
+	color: #666;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight-con img{
+	margin: 0 3px;
+	cursor: pointer;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-freight-con u{
+	color: #333;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-evaluate{
+	height: 35px;
+	line-height: 35px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-evaluate span{
+	color: #666;
+	padding-left: 8px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-evaluate em{
+	padding: 0 10px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-evaluate a{
+	color: #333;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-evaluate a:hover{
+	color: #c00;
+	text-decoration: underline;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-evaluate i{
+	color: #f60;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-service-bar{
+	height: ;
+	line-height: ;
+	color: #666;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-service-bar span{
+	padding-left: 8px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-service-bar a{
+	color: #36c;
+	padding: 0 3px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-service-infor{
+	padding-left: 72px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-service-infor li{
+	float: left;
+	width: 110px;
+	height: 27px;
+	line-height: 27px;
+	color: #333;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-service-infor li img{
+	width: 22px;
+	height: 22px;
+	margin-right: 5px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner{
+	margin-top: 12px;
+	padding-top: 15px;
+	border-top: 1px solid #f2f2f2;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-color-type{
+	position: relative;
+	padding-left: 65px;
+	height: 32px;
+	line-height: 32px;
+	color: #666;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-color-type span{
+	position: absolute;
+	left: 8px;
+	top: 0;
+	height: 32px;
+	line-height: 32px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .zs-color-type .color{
+	position: relative;
+	width: 40px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	border: 2px solid #c00;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-skin-inner .selected{
+	background: url(../images/bg.png) no-repeat 0 -346px;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	bottom: 0;
+	right: -2;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-suit{
+	position: relative;
+	height: 42px;
+	line-height: 43px;
+	color: #666;
+	padding-left: 65px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-suit span{
+	position: absolute;
+	left: 8px;
+	top: 0;
+	margin-right: 10px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-suit a{
+	position: relative;
+	left: 10px;
+	display: inline-block;
+	line-height: 26px;
+	font-size: 12px;
+	color: #333;
+	padding: 0 9px;
+	-border: 2px solid #c00;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-suit a.selected{
+	border: 2px solid #c00;
+	background: url(../images/bg.png) no-repeat 0 -346px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zp-suit-desc{
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #eee;
+	background: #fafafa;
+	padding: 8px 10px;
+	margin-left: 75px;
+	color: #333;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-quantity{
+	position: relative;
+	height: 32px;
+	line-height: 32px;
+	color: #333;
+	padding-left: 65px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-quantity span{
+	position: absolute;
+	left: 8px;
+	top: 0;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-quantity .amount-widget{
+	position: relative;
+	margin: 20px 0 0 10px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-quantity .amount-widget .changeAmount{
+	position: absolute;
+	top: 0;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 22px;
+	color: #666;
+	background-color: #f8f8f8;
+	border: 1px solid #e6e6e6;
+	text-align: center;
+	cursor: pointer;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-quantity .amount-widget input{
+	position: absolute;
+	top: 0;
+	left: 38px;
+	padding: 5px 10px;
+	height: 18px;
+	line-height: 20px;
+	width: 44px;
+	border: 0;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	outline: none;
+	text-align: center;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-quantity .amount-widget .increase{
+	left: 100px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-quantity u{
+	margin-left: 145px;
+	color: #999;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-deal-btn{
+	font: 18px/50px "微软雅黑";
+	text-align: center;
+	padding: 32px 0 20px 80px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-deal-btn .zs-buy-now{
+	float: left;
+	color: #fff;
+	width: 140px;
+	height: 50px;
+	background-color: #c00;
+	border: 1px solid #c00;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-deal-btn .zs-buy-now:hover{
+	background-color: #b90000;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-deal-btn .zs-store-buy{
+	float: left;
+	color: #c00;
+	width: 140px;
+	height: 50px;
+	background-color: #ffeded;
+	border: 1px solid #ffd9d9;
+	cursor: pointer;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-deal-btn .zs-store-buy:hover{
+	background-color: #ffe2e2;
+}
+/*店铺信息  右侧QQ*/
+.zs-bread-crumbs .zs-store-infor{
+	float: right;
+	width: 197px;
+	border-left: 1px solid #ededed;
+	padding-bottom: 144px;
+}
+.zs-bread-crumbs .zs-store-infor .zs-store-name{
+	height: 74px;
+	line-height: 74px;
+	text-align: center;
+	border-bottom: 1px solid #ededed;
+}
+.zs-bread-crumbs .zs-store-infor .zs-store-name a{
+	color: #134ba0;
+	font-size: 14px;
+}
+.zs-bread-crumbs .zs-store-infor .zs-store-name a:hover{
+	color: #c00;
+	text-decoration: underline;
+}
+.zs-bread-crumbs .zs-store-infor .zs-store-connection li{
+	padding-left: 14px;
+	height: 32px;
+	line-height: 32px;
+}
+.zs-bread-crumbs .zs-store-infor .zs-store-connection li i{
+	color: #333;
+	padding: 0 3px;
+}
+.zs-bread-crumbs .zs-store-infor .zs-modbox p{
+	padding-left: 14px;
+	height: 32px;
+	line-height: 32px;
+}
+.zs-bread-crumbs .zs-store-infor .zs-modbox li{
+	height: 24px;
+	line-height: 24px;
+	padding-left: 14px;
+}
+.zs-bread-crumbs .zs-store-infor .zs-modbox em{
+	font-weight: 700px;
+	color: #c00;
+	margin-right: 14px;
+}
+.zs-bread-crumbs .zs-store-infor .zs-modbox i{
+	color: #c00;
+}
+.zs-bread-crumbs .zs-store-infor .zs-collect-box {
+	margin-top: 27px;
+}
+.zs-bread-crumbs .zs-store-infor .zs-collect-box .zs-store-btn{
+	display: block;
+	float: left;
+	margin-left: 14px;
+	width: 78px;
+	height: 38px;
+	background-color: #fafafa;
+	border: 1px solid #e6e6e6;
+	font: 14px/38px "微软雅黑";
+	color: #666;
+	text-align: center;
+}
+.zs-bread-crumbs .zs-store-infor .zs-collect-box .zs-store-btn:hover{
+	background-color: #f2f2f2;
+}
+/*店铺热卖*/
+.zs-modbox {
+	border: 1px solid #eee;
+	margin-top: 10px;
+}
+.zs-modbox .zs-modbox-hd{
+	height: 32px;
+	line-height: 32px;
+	background-color: #fafafa;
+	border-bottom: 1px solid #eee;
+}
+.zs-modbox .zs-modbox-hd p{
+	padding: 0 10px;
+	color: #333;
+}
+.zs-modbox .zs-modbox-list li{
+	float: left;
+	position: relative;
+	width: 150px;
+	padding-top: 35px;
+	margin-left: 42px;
+}
+.zs-modbox .zs-modbox-list li a{
+	font: 12px/18px "微软雅黑";
+	color: #333;
+}
+.zs-modbox .zs-modbox-list li a:hover{
+	color: #c00;
+	text-decoration: underline;
+}
+.zs-modbox .zs-modbox-list li img{
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	width: 150px;
+	height: 150px;
+}
+.zs-modbox .zs-modbox-list li p{
+	margin-top: 180px;
+}
+.zs-modbox .zs-modbox-list li span{
+	display: block;
+	color: #f60;
+	font-size: 14px;
+	padding: 12px 0;
+	font-weight: 700;
+}
+.zs-modbox .zs-modbox-list li span i{
+	font-size: 10px;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

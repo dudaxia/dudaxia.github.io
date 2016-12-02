@@ -1,0 +1,294 @@
+@charset 'utf-8';  
+html,body{
+	width: 100%;
+	height: 100%;
+}
+/*头部样式*/
+.wrapper{
+	margin: 0 auto;
+	width: 990px;
+}
+.wrapper .header{
+	padding-top: 14px;
+}
+.wrapper .header .logo{
+	float: left;
+}
+.wrapper .header .logo img{
+	float: left;
+	width: 182px;
+	height: 60px;
+}
+.wrapper .header .logo p{
+	float: left;
+	font: 14px/44px "Arial";
+	color: #666;
+	padding-left: 10px;
+	border-left: 1px solid #e6e6e6;
+	margin: 10px 0 0 10px;
+}
+.wrapper .header .register-bar{
+	float: right;
+	font-size: 14px;
+	line-height: 22px;
+	padding-top: 21px;
+}
+.wrapper .header .register-bar a{
+	float: right;
+	color: #c00;
+	padding: 3 10px;
+}
+.wrapper .header .register-bar a:hover{
+	background-color: #c00;
+	color: #fff;
+}
+/*底部样式*/
+.footer{
+	border-top: 1px solid #dcdcdc;
+	margin-top: 70px;
+	font: 12px/44px "微软雅黑";
+}
+.footer .about{
+	float: left;
+}
+.footer .about a{
+	color: #666;
+	padding: 0 5px;
+	font: 12px/44px "微软雅黑";
+}
+.footer .about a:hover{
+	text-decoration: underline;
+	color: #c00;
+}
+.footer .copyright{
+	float: right;
+}
+/*注册样式*/
+.wrapper .register-wrap{
+	border: 1px solid #e6e6e6;
+	margin-top: 25px;
+}
+.wrapper .register-wrap .register-title{
+	width: 900px;
+	height: 60px;
+	line-height: 60px;
+	font: 18px/60px "微软雅黑";
+	color: #999;
+	padding-left: 88px;
+	background-color: #fafafa;
+}
+.wrapper .register-wrap .register-form-wrap{}
+
+.wrapper .register-wrap .register-form-wrap .register-module{
+	float: left;
+	width: 500px;
+	padding: 30px 0 0 89px;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-tab{
+	position: relative;
+	font: 18px/38px "微软雅黑";
+	color: #e02d2d;
+	text-align: center;
+	height: 40px;
+	border-bottom: 1px solid #e6e6e6;
+	margin-bottom: 30px;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-tab p{
+	position: absolute;
+	bottom: -1px;
+	width: 250px;
+	height: 38px;
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+	border-top: 2px solid #e02d2d;
+	background-color: #fff;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-tab p span{
+	padding-left: 20px;
+	background: url(../images/fast-login-bg.png) no-repeat -156px -240px;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form{
+	position: relative;
+	margin-bottom: 42px;
+	padding-left: 83px;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form .label{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 83px;
+	text-align: right;
+	font: 14px/40px "微软雅黑";
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form .label em{
+	color: #f30;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form input{
+	height: 38px;
+	width: 283px;
+	padding-left: 5px;
+	margin-right: 10px;
+	border: 1px solid #ccc;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form input.input-captcha{
+	width: 168px;
+	margin-right: 120px;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form .captcha{
+	position: absolute;
+	left: 268px;
+	top: 0;
+	width: 98px;
+	height: 38px;
+	border: 1px solid #ccc;
+	font: 14px/38px "微软雅黑";
+	text-align: center;
+	background-color: #f9f9f9;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form .cap.right-tips{
+	left: 430px;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form .cap.wrong-tips{
+	left: 430px;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form .change{
+	margin-right: 10px;
+	color: #134ba0;
+	cursor: pointer;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form .change:hover{
+	color: #c00;
+	text-decoration: underline;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form input.input-phone-captcha{
+	width: 168px;
+	margin-right: 130px;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form .phone-captcha{
+	position: absolute;
+	left: 268px;
+	top: 0;
+	width: 108px;
+	height: 38px;
+	border: 1px solid #ccc;
+	line-height: 38px;
+	font-size: 12px;
+	color: #666;
+	background-color: #f8f8f8;
+	text-align: center;
+	cursor: pointer;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form .phone-captcha:hover{
+	background-color: #f2f2f2;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form .right-tips{
+	display: none;
+	position: absolute;
+	top: 11px;
+	left: 383px;
+	width: 15px;
+	height: 15px;
+	background: url(../images/fast-login-bg.png) no-repeat -155px -162px; 
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form .wrong-tips{
+	display: none;
+	position: absolute;
+	top: 11px;
+	left: 383px;
+	width: 100px;
+	background: url(../images/fast-login-bg.png) no-repeat -155px -195px; 
+	font: 12px "微软雅黑";
+	color: #c00;
+	padding-left: 20px;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-form .tips{
+	position: absolute;
+	font: 12px/32px "微软雅黑";
+	color: #ccc;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .agreement{
+	padding-left: 83px;
+	height: 32px;
+	font: 12px/32px "微软雅黑";
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .agreement a{
+	color: #134ba0;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .agreement a:hover{
+	color: #c00;
+	text-decoration: underline;
+}
+.wrapper .register-wrap .register-form-wrap .register-module .register-phone-number .register-btn{
+	width: 290px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #dc2f2f;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	margin: 20px 0 100px 83px;
+	cursor: pointer;
+}
+.wrapper .register-wrap .register-form-wrap .fast-login{
+	float: right;
+	width: 170px;
+	border-left: 1px solid #f5f5f5;
+	margin-top: 30px;
+	padding: 0 80px 0 25px;
+}
+.wrapper .register-wrap .register-form-wrap .fast-login p{
+	font: 12px/24px "微软雅黑";
+	color: #666;
+}
+.wrapper .register-wrap .register-form-wrap .fast-login p a{
+	font: 12px/24px "微软雅黑";
+	color: #134ba0;
+	padding: 0 3px;
+}
+.wrapper .register-wrap .register-form-wrap .fast-login p a:hover{
+	color: #c00;
+	text-decoration: underline;
+}
+.wrapper .register-wrap .register-form-wrap .fast-login .fast-login-list .list-item{
+	display: block;
+	width: 170px;
+	height: 36px;
+	margin-top: 15px;
+}
+.wrapper .register-wrap .register-form-wrap .fast-login .fast-login-list .list-item:hover{
+	opacity: 0.8;
+}
+.wrapper .register-wrap .register-form-wrap .fast-login .fast-login-list .list-item.weixin{
+	background: url(../images/weixin.png) no-repeat 0 0;
+}
+.wrapper .register-wrap .register-form-wrap .fast-login .fast-login-list .list-item.sina{
+	background: url(../images/fast-login-bg.png) no-repeat 0 0;
+}
+.wrapper .register-wrap .register-form-wrap .fast-login .fast-login-list .list-item.qq{
+	background: url(../images/fast-login-bg.png) no-repeat 0 -37px;
+}
+.wrapper .register-wrap .register-form-wrap .fast-login .fast-login-list .list-item.alipay{
+	background: url(../images/fast-login-bg.png) no-repeat 0 -74px;
+}
+.wrapper .register-wrap .register-form-wrap.fast-login .fast-login-list .list-item.baidu{
+	background: url(../images/fast-login-bg.png) no-repeat 0 -111px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
