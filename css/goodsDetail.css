@@ -438,7 +438,7 @@
 	top: 0;
 	margin-right: 10px;
 }
-.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-suit a{
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-suit .suit-name{
 	position: relative;
 	left: 10px;
 	display: inline-block;
@@ -446,11 +446,22 @@
 	font-size: 12px;
 	color: #333;
 	padding: 0 9px;
-	-border: 2px solid #c00;
+	border: 2px solid #fff;
 }
-.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-suit a.selected{
-	border: 2px solid #c00;
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-suit .suit-name i{
+	display:none;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	bottom: 0;
+	right: -1px;
 	background: url(../images/bg.png) no-repeat 0 -346px;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-suit .suit-name i.actived{
+	display: block;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-suit .suit-name.actived{
+	border: 2px solid #c00;
 }
 .zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zp-suit-desc{
 	height: 20px;
@@ -460,6 +471,12 @@
 	padding: 8px 10px;
 	margin-left: 75px;
 	color: #333;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zp-suit-desc p{
+	display: none;
+}
+.zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zp-suit-desc p.show{
+	display: block;
 }
 .zs-bread-crumbs .zs-deal-detail .zs-deal-wrap .zs-detail-infor .zs-quantity{
 	position: relative;
@@ -659,32 +676,202 @@
 	font-weight: 700;
 }
 
+/*
+	商品详情 评价 
+*/
+.zs-side-left {
+	width: 200px;
+}
+.zs-side-left .zs-modbox-hd {
+	padding-left: 10px;
+}
+.zs-side-left .zs-modbox .searchgoods{
+	padding: 10px 15px;
+}
+.zs-side-left .zs-modbox .searchgoods dl{
+	position: relative;
+	margin-bottom: 6px;
+	padding-left: 48px;
+}
+.zs-side-left .zs-modbox .searchgoods dl dt{
+	position:  absolute;
+	left: 0;
+	top: 0;
+	height: 26px;
+	line-height: 26px;
+	color: #666;
+}
+.zs-side-left .zs-modbox .searchgoods .text{
+	padding: 3px 5px;
+	width: 104px;
+	height: 18px;
+	line-height: 18px;
+	border: 1px solid #e6e6e6;
+}
+.zs-side-left .zs-modbox .searchgoods .text2{
+	width: 36px;
+	padding: 3px 5px;
+	height: 18px;
+	line-height: 18px;
+	border: 1px solid #e6e6e6;
+}
+.zs-side-left .zs-modbox .searchgoods .goodsbtn{
+	margin-left: 48px;
+	width: 60px;
+	height: 26px;
+	line-height: 26px;
+	border: 1px solid #d9d9d9;
+	font: 700 12px/26px arial;
+	color: #333;
+	cursor: pointer;
+	outline: none;
+}
 
+/*shangpin*/
+.zs-side-left .zs-modbox{
+	margin-top: 10px;
+	border: 1px solid #ededed;
+}
+.zs-side-left .zs-modbox .zs-modbox-hd {
+	padding: 0 10px;
+	height: 32px;
+	font: 14px/32px "微软雅黑";
+	border-bottom: 1px solid #ededed;
+	background-color: #fafafa;
+}
+.zs-side-left .zs-modbox .goods-category dt{
+	padding-left: 37px;
+	height: 34px;
+	font: 14px/34px "微软雅黑";
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #e6e6e6;
+	cursor: pointer;
+}
+.zs-side-left .zs-modbox .goods-category .all-goods dt{
+	background-color: #fff;
+	border: 0 none;
+	font-weight: 700;
+}
+.zs-side-left .zs-modbox .goods-category .all-goods dd{
+	display: block;
+	padding:  0 0 7px 37px;
+	line-height: 18px;
+}
+.zs-side-left .zs-modbox .goods-category .all-goods dd a{
+	margin-right: 14px;
+	color: #666;
+}
+.zs-side-left .zs-modbox .goods-category .all-goods dd a:hover{
+	color: #c00;
+	text-decoration: underline;
+}
+.zs-side-left .zs-modbox .goods-category dd{
+	padding: 5px 0;
+	line-height: 22px;
+}
+.zs-side-left .zs-modbox .goods-category .unfold dt{
+	background: url(../images/bg.png) no-repeat -23px -602px;
+	background-color: #f7f7f7;
+}
+.zs-side-left .zs-modbox .goods-category dt{
+	background: url(../images/bg.png) no-repeat -23px -570px;
+}
+.zs-side-left .zs-modbox .goods-category ul{
+	padding-left: 43px;
+}
+.zs-side-left .zs-modbox .goods-category ul li{
+	padding-left: 10px;
+	line-height: 22px;
+	background: url(../images/bg.png) no-repeat -56px -486px;
+	background-position: -56px -468px;
+}
+.zs-side-left .zs-modbox .goods-category dt h3{
+	font: 14px/34px "微软雅黑";
+} 
 
+/*
+	商品详情右侧tabbar
+*/
+.zs-main {
+	width: 990px;
+}
+.zs-main .zs-tabbar ul{
+	height: 36px;
+	-border: 1px solid #ededed;
+	background-color: #fafafa;
+}
+.zs-main .zs-tabbar ul li{
+	float: left;
+	border-right: 1px solid #ededed;
+}
+.zs-main .zs-tabbar ul li.cur{
+	background-color: #fff;
+	border-top: 2px solid #c00;
+	margin-top: -1px;
+}
+.zs-main .zs-tabbar ul li a{
+	padding: 0 15px;
+	color: #333;
+	font: 14px/36px "微软雅黑";
+	white-space: nowrap;
+}
+.zs-main .zs-tabbar ul li a:hover{
+	color: #c00;
+}
+.zs-main .zs-tabbar ul li .phone-purchase{
+	overflow: hidden;
+	position: relative;
+	padding-left: 10px;
+}
+.zs-main .zs-tabbar ul li .phone-purchase a{
+	padding-left: 20px;
+	background: url( ../images/erweima.png ) no-repeat ;
+}
+.zs-main .zs-tabbar ul li .phone-purchase .ico{
+	position: absolute;
+	top: 16px;
+	right: 11px;
+	width: 5px;
+	height: 3px;
+	background: url(../images/sanjiao.png) no-repeat;
+}
+.zs-main .zs-tabbar ul .photoCode{
+	position: relative;
+}
+.zs-main .zs-tabbar ul .photoCode .code{
+	position: absolute;
+	display: none;
+	top: 36px;
+	left: -1px;
+	border: 1px solid #eee;
+	border-top: 0;
+}
+.zs-main .zs-tabbar ul .photoCode .code img{
+	width: 105px;
+	height: 105px;
+}
+.zs-main .zs-tabbar ul .photoCode:hover .code{
+	display: block;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+	商品详情右侧tabbar 相关content
+*/
+.zs-main .zs-container{
+	position: relative;
+	width: 790px;
+}
+.zs-main .zs-container .item{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border: none;
+}
+.zs-main .zs-container .item.first{
+	display: block;
+}
 
 
 

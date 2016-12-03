@@ -80,7 +80,8 @@
 	width: 100px;
 	border: 1px solid #e6e6e6;
 	border-top: 0;
-	padding: 0 10px
+	padding: 0 10px;
+	background-color: #fff;
 }
 .cart-topbar .wrapper .zol-quick-menu .zol-my-center .zol-my-center-bd a{
 	display: block;
@@ -97,6 +98,7 @@
 	border: 1px solid #e6e6e6;
 	border-top: 0;
 	background-color: #fff;
+	z-index: 12;
 }
 .cart-topbar .wrapper .zol-quick-menu .zol-mobil .zol-mobile-bd img{
 	position: absolute;
