@@ -121,7 +121,7 @@ $(function(){
 							div.find('.shop-name-info a').html( data[goodsId]['shop-name'] );
 							div.find('.inforbox .tit a').html( data[goodsId]['goods-name'] );
 							div.find('.store-item .inforbox .color span').html( data[goodsId]['goods-color'] );
-							div.find('.store-item .inforbox .info-con span em').html( data[goodsId]['goods-package'][k] );
+							div.find('.store-item .inforbox .info-con span em').html( data[goodsId]['goods-package'][k]['package-name'] );
 							div.find('.s-price em').html( that.zolCart[k]['package-price'] );
 							div.find('.goods-amount').val( that.zolCart[k]['amount'] );
 							var totalMoney = parseInt(that.zolCart[k]['amount'])*that.zolCart[k]['package-price'];

@@ -1,0 +1,102 @@
+@charset 'utf-8';  
+
+/*
+	footer
+*/
+.footer{
+	border-top: 1px solid #d9d9d9;
+	margin-top: 20px;
+}
+.footer .footer-service-relate{
+	padding: 20px 0;
+}
+.footer .footer-service-relate dl{
+	float: left;
+	width: 175px;
+}
+.footer .footer-service-relate dl dt{
+	font: 700 14px/28px "微软雅黑";
+	color: #666;
+}
+.footer .footer-service-relate dl dd p{
+	font: 12px/28px "微软雅黑";
+}
+.footer .footer-service-relate dl dd p a:hover{
+	text-decoration: underline;
+}
+.footer .footer-service-relate .hotline{
+	background: url(../images/footer.png) no-repeat 0 -90px;
+	padding-left: 60px;
+	width: 210px;
+}
+.footer .footer-service-relate .hotline .weibo{
+	display: inline-block;
+	padding-left: 26px;
+	color: #333;
+	background: url(../images/footer.png) no-repeat 0 0 ;
+	font: 12px/32px "微软雅黑";
+}
+.footer .footer-service-relate .cooperation{
+	float: right;
+	background: url(../images/footer.png) no-repeat 0 -215px;
+	padding-left: 60px;
+	width: 145px;
+}
+.footer .footer-service-relate .cooperation p{
+	font: 12px/28px "微软雅黑";
+}
+.footer .footer-service-relate .cooperation .btn{
+	display: block;
+	margin-top: 6px;
+	width: 80px;
+	height: 26px;
+	font: 12px/26px "SimSun";
+	color: #fff;
+	background-color: #f33;
+	text-align: center;
+}
+.footer .footer-service-relate .cooperation .btn:hover{
+	background-color: #c40000;
+}
+/*footer 下*/
+.footer-nav-bar{
+	padding: 25px 0 30px;
+	background-color: #2d2d2d;
+}
+.footer-nav-bar .footer-nav{
+	margin-left: -10px;
+	padding-top: 7px;
+	font: 12px/24px "微软雅黑";
+	color: #666;
+}
+.footer-nav-bar .footer-nav a{
+	margin: 0 10px;
+	color: #fff;
+	white-space: normal;
+	word-break: keep-all;
+}
+.footer-nav-bar .copyright{
+	margin-left: -10px;
+	padding-top: 20px;
+	font: 12px/24px "微软雅黑";
+	color: #666;
+}
+.footer-nav-bar .copyright a{
+	margin: 0 10px;
+	color: #999;
+	white-space: normal;
+	word-break: keep-all;
+}
+.footer-nav-bar a:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+

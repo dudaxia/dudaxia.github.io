@@ -1,4 +1,5 @@
 
+
 {
 	"10001":{
 		"shop-name":"瑞意摄影器材",
@@ -7,16 +8,30 @@
 		"goods-name": "NIKON尼康 DX 18-300mm f/3.5-6.3G ED VR 签约代理产品有保障",
 		"goods-color": "黑色",
 		"goods-package":{
-			"1000101": "官方标配",
-			"1000102": "套餐一",
-			"1000103": "套餐二",
-			"1000104": "套餐三",
-			"1000105": "套餐四"
+			"1000101": {
+				"package-name":"官方标配",
+				"package-price": 3000
+				},
+			"1000102": {
+				"package-name":"套餐一",
+				"package-price": 4000
+				},
+			"1000103": {
+				"package-name":"套餐二",
+				"package-price": 5000
+				},
+			"1000104": {
+				"package-name":"套餐三",
+				"package-price": 6000
+				},
+			"1000105": {
+				"package-name":"套餐四",
+				"package-price": 7000
+				}
 		},
-		"stock": 10
+		"stock": 900
 	}
 }
-
 
 
 

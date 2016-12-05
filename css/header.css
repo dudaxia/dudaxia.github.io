@@ -1,0 +1,305 @@
+@charset 'utf-8';  
+
+.wrapper{
+	margin: 0 auto;
+	width: 1200px;
+}
+
+/*header*/
+.header{
+	padding-top: 30px;
+}
+.header .logo{
+	float: left;
+	width: 360px;
+	padding-left: 5px;
+}
+.header .logo a{
+	display: block;
+	float: left;
+	width: 180px;
+	height: 50px;
+	background: url(../images/logo_180x50.png);
+}
+.header .logo p{
+	float: left;
+	font: 14px/44px "微软雅黑";
+	color: #666;
+	border-left: 1px solid #eee;
+	padding-left: 10px;
+	margin: 3px 0 0 10px;
+}
+/*搜索框*/
+.header .search-box{
+	padding: 9px 30px 0;
+	float: left;
+}
+.header .search-box .search{
+	position: relative;
+	width: 536px;
+	height: 32px;
+	border: 2px solid #c40000;
+}
+.header .search-box .search input{
+	outline: none;
+	border: 0;
+}
+.header .search-box .search ul{
+	position: absolute;
+	top: 34px;
+	left: -2px;
+	width: 448px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-bottom: 0;
+	z-index: 20;
+}
+.header .search-box .search ul li{
+	height: 24px;
+	font: 12px/24px "微软雅黑";
+	color: #666;
+	padding-left: 10px;
+	border-bottom: 1px solid #eee;
+}
+.header .search-box .search .search-text{
+	float: left;
+	width: 427px;
+	height: 20px;
+	font: 14px/20px "微软雅黑";
+	color: #666;
+	padding: 6px 10px;
+}
+.header .search-box .search .search-btn{
+	float: left;
+	width: 89px;
+	height: 32px;
+	font: 16px/32px "微软雅黑";
+	color: #fff;
+	text-align: center;
+	background-color: #c40000 ;
+	cursor: pointer;
+}
+.header .search-box .hot-search{
+	padding-top: 7px;
+}
+.header .search-box .hot-search a{
+	margin-right: 15px;
+	font: 12px/18px "微软雅黑";
+	color: #999;
+}
+.header .search-box .hot-search a:hover{
+	color: #f60;
+	text-decoration: underline;
+}
+.header .ad-box{
+	float: left;
+	margin-left: 40px;
+	width: 180px;
+	height: 60px;
+}
+.header .ad-box img{
+	width: 180px;
+	height: 60px;
+}
+/*nav*/
+.nav-box{
+	position: relative;
+	border-bottom: 2px solid #c40000;
+	margin-top: 20px;
+}
+.nav-box .category-nav-container{
+	position: relative;
+	padding-left: 34px;
+	width: 166px;
+	height: 34px;
+	background-color: #c40000;
+	cursor: pointer;
+}
+.nav-box .category-nav-container h2{
+	font: 14px/34px "微软雅黑";
+	color: #fff;
+}
+.nav-box .category-nav-container .icon{
+	position: absolute;
+	top: 14px;
+	right: 20px;
+	width: 10px;
+	height: 6px;
+	background: url(../images/zolcom_list_ico.png) 0 0;
+}
+.nav-box .nav{
+	position: absolute;
+	top: 0;
+	left: 235px;
+	height: 30px;
+}
+.nav-box .nav li{
+	float: left;
+	height: 30px;
+	
+	padding: 0 20px;
+}
+.nav-box .nav li a{
+	font: 16px/30px "微软雅黑";
+	color: #333;
+}
+.nav-box .nav li a:hover{
+	color: #f60;
+}
+.nav-box .nav-tips{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 30px;
+	line-height: 30px;
+}
+.nav-box .nav-tips a {
+	color: #f60;
+	font-size: 16px;
+} 
+.nav-box .nav-tips a:hover {
+	text-decoration: underline;
+}
+/* 
+	下拉菜单 
+*/
+.nav-box .category-menu-nav{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 36px;
+	width: 234px;
+	margin-top: -2px;
+	-border-left: 1px solid #3d3d3d;
+	z-index: 14;
+	background: #fff;
+}
+/* ul li */
+.nav-box .category-menu-nav .nav-container li{
+	position: relative;
+	padding: 0 0 1px 31px;
+	height: 38px;
+	font: 12px/38px "微软雅黑";
+	color: #fff;
+	border-top: 1px solid #3d3d3d;
+	background-color: #2d2d2d;
+	border-left: 1px solid #3d3d3d;
+}
+.nav-box .category-menu-nav .nav-container li:hover{
+	color: #333;
+	background-color: #fff;
+}
+.nav-box .category-menu-nav .nav-container li:hover .item>a{
+	color: #333;
+}
+.nav-box .category-menu-nav .nav-container li .item>a{
+	font: 700 12px/38px "微软雅黑";
+	color: #fff;
+}
+.nav-box .category-menu-nav .nav-container li .item a:hover{
+	text-decoration: underline;
+}
+/* 3级菜单内容 */
+.nav-box .category-menu-nav .nav-container .category-menu-content{
+	position: absolute;
+	left: 199px;
+	-top: 0;
+	width: 614px;
+	height: 409px;
+	border-right: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	background-color: #fff;
+	padding: 0 30px 0 105px;
+	font: 12px/26px "微软雅黑";
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content dt{
+	position: absolute;
+	left: 30px;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content .service{
+	padding: 21px 0 7px;
+	border-bottom: 0;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content .service a{
+	color: #00ae75;
+	font-weight: 700;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content .service a:hover{
+	text-decoration: underline;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content dl{
+	padding: 17px 0;
+	border-bottom: 1px solid #e6e6e6;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content dt{
+	font-weight: 700;
+	color: #333;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content dt a:hover{
+	text-decoration: underline;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content dd p{
+	width: 622px;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content dd p a:hover{
+	text-decoration: underline;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content dd i{
+	padding: 0 5px;
+	color: #aaa;
+}
+/* nav内容区 */
+.nav-box .category-menu-nav .nav-container .category-menu-content.category-1{
+	display: none;
+	top: 0;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content.category-2{
+	top: -40px;
+	display: none;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content.category-3{
+	top: -80px;
+	display: none;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content.category-4{
+	top: -120px;
+	display: none;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content.category-5{
+	top: -160px;
+	display: none;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content.category-6{
+	top: -200px;
+	display: none;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content.category-7{
+	top: -240px;
+	display: none;
+}
+.nav-box .category-menu-nav .nav-container .category-menu-content.category-8{
+	display: none;
+	top: -280px;
+}
+
+/* ad-div */
+.nav-box .category-nav-container .category-menu-nav{
+	width: 200px;
+	height: 70px;
+}
+.nav-box .category-nav-container .category-menu-nav .ad-div img{
+	width: 200px;
+	height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
