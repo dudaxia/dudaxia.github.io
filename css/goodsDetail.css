@@ -1064,6 +1064,7 @@
 */
 /* 顶部 */
 .auto-show-content{
+	position: relative;
 	display: none;
 }
 .auto-show-content .zs-tabbar{
@@ -1137,9 +1138,9 @@
 /* 右侧 */
 
 .auto-show-content .zs-sidebar{
-	position: absolute;
+	position: fixed;
 	top: 38px;
-	left: 1112px;
+	left: 1074px;
 	width: 198px;
 	height: 13944px;
 	background-color: #fafafa;
@@ -1149,8 +1150,8 @@
 }
 .auto-show-content .zs-sidebar .zs-quick-menu{
 	position: fixed;
-	-top: 38px;
-	left: 1112px;
+	top: 38px;
+	left: 1074px;
 	margin: 20px 0;
 	padding: 0 30px;
 	overflow: hidden;
@@ -1184,6 +1185,7 @@
 	height: 76px;
 	background: url( ../images/survey_ico.png ) no-repeat;
 	margin-top: -38px;
+	z-index: 13;
 }
 
 /* 
@@ -1210,14 +1212,23 @@
 	padding: 10px 0;
 	margin: 5px 0;
 	color: #fff;
-	z-index: 17;
+	vertical-align: middle;
+	background-color: #2d2d2d;
 }
 .toolbar-wrapper .zc-operation-tabbox .tab-item:hover{
 	background-color: #f33;
 }
+.toolbar-wrapper .zc-operation-tabbox .tab-item:hover .iconfont{
+	background-color: #f33;
+} 
 .toolbar-wrapper .zc-operation-tabbox .tab-item .iconfont{
-	font-size: 24px;
+	position: relative;
+	font-size: 20px;
 	text-align: center;
+	z-index: 15;
+	/* width:37px;
+	height:40px; */
+
 }
 .toolbar-wrapper .zc-operation-tabbox .tab-item .content-item{
 	display: none;
@@ -1261,12 +1272,14 @@
 	position: fixed;
 	right: 12px;
 	top: 190px;
+	z-index: 15;
 }
 .zs-consult-layer li{
 	width: 78px;
 	height: 74px;
 	border: 1px solid #ededed;
 	text-align: center; 
+	background-color: #fff;
 }
 .zs-consult-layer li:hover{
 	background-color: #ffeded;
@@ -1288,6 +1301,7 @@
 	position: fixed;
 	right: 37px;
 	bottom: 55px;
+	z-index: 13;
 }
 .back-to-top li{
 	padding: 10px;
@@ -1317,10 +1331,13 @@
 	footer
 */
 .footer{
+	position: relative;
 	border-top: 1px solid #d9d9d9;
 	margin-top: 20px;
+	z-index: 12;
 }
 .footer .footer-service-relate{
+	background-color: #fff;
 	padding: 20px 0;
 }
 .footer .footer-service-relate dl{

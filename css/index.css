@@ -1,5 +1,431 @@
 @charset 'utf-8';  
 
+/*
+	banner
+*/
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+.version{
+	position: relative;
+}
+.version .version-left{
+	position: absolute;
+	width: 350px;
+	height: 730px;
+	top: 0;
+	left: -350px;
+	background: url(../images/version-left.jpg) no-repeat;
+}
+.version .version-right{
+	position: absolute;
+	width: 350px;
+	height: 730px;
+	top: 0;
+	right: -350px;
+	background: url(../images/version-right.jpg) no-repeat;
+}
+
+/* main banner 轮播*/
+.main-left{
+	float: left;
+	margin: 10px 0 0 1px;
+}
+.main-left .focus-box{
+	width: 924px;
+	height: 290px;
+	overflow: hidden;
+}
+.main-left .focus-box .bx-wrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.main-left .focus-box .bx-wrapper .bx-viewport{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+/*图片*/
+.main-left .focus-box .bx-wrapper .bx-viewport ul{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 600%;
+	height: 100%;
+}
+.main-left .focus-box .bx-wrapper .bx-viewport ul li{
+	float: left;
+	width: 924px;
+	height: 290px;
+}
+.main-left .focus-box .bx-wrapper .bx-viewport ul li img{
+	width: 924px;
+	height: 290px;
+}
+/*箭头*/
+.main-left .focus-box .bx-wrapper .arrow{
+	position: absolute;
+	top: 50%;
+	margin-top: -33px;
+	width: 40px;
+	height: 66px;
+	font: 50px/66px "";
+	color: #e6e6e6;
+	text-align: center;
+	cursor: pointer;
+}
+.main-left .focus-box .bx-wrapper .arrow.arrow-right{
+	right: 0;
+}
+.main-left .focus-box .bx-wrapper .arrow:hover .arrow-bg{
+	display: block;
+}
+.main-left .focus-box .bx-wrapper .arrow .arrow-bg{
+	position: absolute;
+	display: none;
+	top: 50%;
+	margin-top: -33px;
+	width: 40px;
+	height: 66px;
+	background-color: #000;
+	opacity: 0.3;
+}
+/*小圆圈*/
+.main-left .focus-box .bx-wrapper .bx-page{
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	padding-right: 5px;
+	text-align: right;
+}
+.main-left .focus-box .bx-wrapper .bx-page .ba-page-item{
+	float: left;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: #64130a;
+	font: 12px/17px "微软雅黑";
+	color: #fff;
+	margin-right: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+.main-left .focus-box .bx-wrapper .bx-page .ba-page-item.current{
+	background-color: #c40000;
+}
+/* 商品list */
+.main-left .main-recommend-list li{
+	float: left;
+	width: 169px;
+	height: 149px;
+	padding-left: 15px;
+	border: 1px solid #e6e6e6;
+	text-align: right;
+	margin-left: -1px;
+}
+.main-left .main-recommend-list li .name{
+	height: 24px;
+	line-height: 24px;
+	font-size: 16px;
+	margin-top: 10px;
+	font-weight: normal;
+}
+.main-left .main-recommend-list li .price{
+	height: 22px;
+	line-height: 22px;
+	font-size: 14px;
+	color: #d33f3f;
+}
+.main-left .main-recommend-list li .name ,
+.main-left .main-recommend-list li .price {
+	text-align: left;
+	font-family: "微软雅黑";
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/* main 右侧 */
+.main-right{
+	float: right;
+	width: 240px;
+	height: 439px;
+	margin-top: 10px;
+}
+.main-right .manual{
+	width: 240px;
+	height: 219px;
+	overflow: hidden;
+	margin-bottom: 1px;
+}
+.main-right .manual a{
+	display: block;
+	width: 100%;
+}
+.main-right .manual img{
+	width: 100%;
+	height: 100%;
+}
+
+
+/*
+	团购
+*/
+.ztuan-section{
+	margin-top: 12px;
+}
+
+/*公用title*/
+.module-title{
+	height: 44px;
+}
+.module-title .title{
+	float: left;
+	padding-left: 15px;
+	line-height: 44px;
+	font-size: 24px;
+	font-weight: normal;
+	background: url(../images/module-title.png) no-repeat left;
+}
+.module-title .more{
+	float: right;
+	height: 34px;
+	line-height: 34px;
+	padding-top: 10px;
+	color: #d9d9d9;
+	margin-right: -10px;
+}
+.module-title .more a{
+	font-size: 12px;
+	color: #666;
+	margin: 0 15px;
+}
+.module-title .more a:hover{
+	color: #c00;
+	text-decoration: underline;
+}
+
+/*
+	全国团购列表
+*/
+.ztuan-section .ztuan-list{
+	padding-left: 1px;
+}
+.ztuan-section .ztuan-list li{
+	position: relative;
+	float: left;
+	width: 294px;
+	height: 213px;
+	padding-bottom: 2px;
+	border: 1px solid #ededed;
+	margin: 0 2px 2px -1px;
+	overflow: hidden;
+}
+.ztuan-section .ztuan-list li:hover .countdown{
+	border-bottom: 3px solid #c00;
+}
+.ztuan-section .ztuan-list li a{
+	display: block;
+	width: 298px;
+	height: 179px;
+}
+.ztuan-section .ztuan-list li>a>img{
+	vertical-align: middle;
+	width: 298px;
+}
+.ztuan-section .ztuan-list li .countdown{
+	margin-top:1px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+.ztuan-section .ztuan-list li .countdown img{
+	width: 18px;
+}
+
+/*
+	广告条
+*/
+.ad-div {
+	width: 1200px;
+	height: 90px;
+}
+.ad-div img {
+	width: 100%;
+	height: 100%;
+}
+
+/*
+	1楼 手机通讯
+*/
+.computer-section{
+	margin-top: 12px;
+}
+.computer-section .computer-region .computer-left{
+	position: relative;
+	float: left;
+	width: 360px;
+	height: 420px;
+}
+.computer-section .computer-region .computer-left img{
+	vertical-align: middle;
+}
+.computer-section .computer-region .computer-right {
+	position: relative;
+	float: right;
+	width: 840px;
+	height: 420px;
+}
+.computer-section .computer-region .computer-right .waretype-tab {
+	position: absolute;
+	top: -34px;
+	left: 1px;
+}
+.computer-section .computer-region .computer-right .waretype-tab li {
+	float: left;
+	width: 108px;
+	text-align: center;
+	height: 32px;
+	line-height: 32px;
+	padding-top: 1px;
+	margin-left: -1px;
+	border: 1px solid #ededed;
+	font-size: 16px;
+	color: #333;
+	background-color: #fff;
+}
+.computer-section .computer-region .computer-right .waretype-tab li.cur {
+	padding-top: 0;
+	border-top: 2px solid #ce1a1b;
+	height: 33px;
+	border-bottom: 0;
+}
+/* 内容区 */
+.computer-section .computer-region .computer-right .waretype-con {
+	width: 840px;
+	height: 420px;
+}
+.computer-section .computer-region .computer-right .waretype-con .item{
+	width: 840px;
+	height: 420px;
+	display: none;
+}
+.computer-section .computer-region .computer-right .waretype-con .item.cur {
+	display: block;
+}
+.computer-section .computer-region .computer-right .waretype-con .item a:hover{
+	color: #c00;
+	text-decoration: underline;
+}
+/* 热门 */
+.computer-section .computer-region .computer-right .waretype-con .item .hot-region-left {
+	float: left;
+	width: 840px;
+	height: 420px;
+}
+/* 轮播图 */
+.computer-section .computer-region .computer-right .waretype-con .item .hot-region-left .hot-region-focus{
+	width: 838px;
+	height: 218px;
+	border: 1px solid #ededed;
+	overflow: hidden;
+	position: relative;
+}
+/* 轮播图下列表 */
+.computer-section .computer-region .computer-right .waretype-con .item .hot-region-left .hot-region-ware {
+	margin-top: -1px;
+}
+.computer-section .computer-region .computer-right .waretype-con .item .hot-region-left .hot-region-ware li{
+	float: left;
+	width: 209px;
+	height: 199px;
+	border: 1px solid #ededed;
+	margin-left: -1px;
+}
+.computer-section .computer-region .computer-right .waretype-con .item .hot-region-left .hot-region-ware li:hover{
+	border: 1px solid #c00;
+	position: relative;
+	z-index: 11;
+}
+.computer-section .computer-region .computer-right .waretype-con .item .hot-region-left .hot-region-ware li img{
+	vertical-align: middle;
+	width: 206px;
+	height: 199px;
+}
+
+/* 三星 */
+.computer-section .computer-region .computer-right .waretype-con .item .product-series{
+	margin-left: 2px;
+}
+.computer-section .computer-region .computer-right .waretype-con .item .product-series li {
+	float: left;
+	width: 188px;
+	height: 189px;
+	border: 1px solid #ededed;
+	margin: -1px 0 0 -1px;
+	padding: 10px;
+	background-color: #fff;
+}
+.computer-section .computer-region .computer-right .waretype-con .item .product-series .pic {
+	display: block;
+	width: 160px;
+	height: 120px;
+	margin: 0 auto 3px;
+}
+.computer-section .computer-region .computer-right .waretype-con .item .product-series .pic img {
+	vertical-align: middle;
+}
+.computer-section .computer-region .computer-right .waretype-con .item .product-series .name{
+	height: 40px;
+	line-height: 20px;
+	font-size: 12px;
+	overflow: hidden;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+.computer-section .computer-region .computer-right .waretype-con .item .product-series .price{
+	font-size: 14px;
+	color: #ce1a1b;
+	float: left;
+	height: 18px;
+	line-height: 18px;
+}
+
+/* 广告区 */
+.computer-section .computer-region .brands-con {
+	padding: 3px 3px 4px;
+	border: 1px solid #ededed;
+	margin-top: -1px;
+}
+.computer-section .computer-region .brands-con li {
+	float: left;
+	width: 118px;
+	height: 60px;
+	border: 1px solid transparent;
+	margin-left: -1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,13 +1,14 @@
 
 
-
+$(function(){
 
 /**
 	搜索框Ajax
 */
 var inputWrapper = $('.search-text');
 inputWrapper.on('input',function(){
-	var value = $(this).val();
+	var value = $(this).val().trim();
+
 	$.ajax({
 		url: 'http://suggestion.baidu.com/su?',
 		data: {
@@ -23,6 +24,10 @@ inputWrapper.on('input',function(){
 			$('.search ul').html( content );
 		}
 	});
+
+	if( value.length == 0 ){
+		$('.search ul').hide();
+	}
 })
 
 /**2三级导航*/
@@ -43,9 +48,11 @@ var threeNav = {
 		//鼠标移入移出
 		this.main.hover(function(){
 			that.ulWrapper.stop(true).delay(300).show();
+			console.log(11111);
 		},function(){
 			that.ulWrapper.stop(true).delay(300).hide();
 		});
+		
 	},
 	//3级菜单显示、隐藏
 	hoverlis: function(){
@@ -227,7 +234,7 @@ hotGoodsMove.init();
 
 
 
-
+});
 
 
 
