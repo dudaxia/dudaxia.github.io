@@ -3,7 +3,9 @@ $(function(){
 	/**
 		1 添加公共样式topbar
 	*/
-	$('.topbar-wrapper').load('topbar.html');
+	$('.topbar-wrapper').load('topbar.html',function(){
+		$.getScript('js/topbar.js');
+	});
 
 	/**
 		2 添加公共样式header

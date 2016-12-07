@@ -410,29 +410,216 @@
 	margin-left: -1px;
 }
 
+/* 热卖商品 */
+.recommend-section {
+	margin-top: 12px;
+}
+.recommend-section .module-title .other {
+	float: right;
+	height: 44px;
+	line-height: 44px;
+	padding-left: 22px;
+	margin-right: 10px;
+	font-size: 14px;
+	color: #666;
+	background: url( ../images/other.png ) no-repeat center left;
+}
+.recommend-section .mobile-hot-list a:hover {
+	color: #c00;
+	text-decoration: underline;
+}
+.recommend-section .mobile-hot-list li {
+	float: left;
+	width: 221px;
+	height: 292px;
+	border: 1px solid #ededed;
+	margin-left: -1px;
+	padding: 9px;
+	position: relative;
+}
+.recommend-section .mobile-hot-list li:hover {
+	border: 1px solid #c00;
+	z-index: 4;
+}
+.recommend-section .mobile-hot-list .pic {
+	display: block;
+	height: 220px;
+	position: relative;
+}
+.recommend-section .mobile-hot-list .pic img {
+	vertical-align: middle;
+}
+.recommend-section .mobile-hot-list .name {
+	height: 40px;
+	line-height: 20px;
+	font-size: 12px;
+	overflow: hidden;
+	font-weight: normal;
+	margin-top: 5px;
+}
+.recommend-section .mobile-hot-list .name a {
+	color: #333;
+}
+.recommend-section .mobile-hot-list .price {
+	-float: left;
+	height: 18px;
+	line-height: 18px;
+	font-size: 14px;
+	color: #ce1a1b;
+	margin-top: 5px;
+}
 
+/* footer上 广告 */
+.footer-service{
+	width: 1200px;
+	margin: 12px auto;
+}
+.footer-service li{
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 50px;
+	background: url(../images/service-bg.png) no-repeat;
+}
+.footer-service li a{
+	display: block;
+	height: 50px;
+	padding-left: 60px;
+}
+.footer-service .top {
+	font-size: 18px;
+	height: 28px;
+	line-height: 28px;
+	color: #333;
+}
+.footer-service .below {
+	font-size: 14px;
+	height: 22px;
+	line-height: 22px;
+	color: #666;
+}
+.footer-service .ser-bg1 {
+	background-position: left top;
+}
+.footer-service .ser-bg2 {
+	background-position: left -52px;
+}
+.footer-service .ser-bg3 {
+	background-position: left -104px;
+}
+.footer-service .ser-bg4 {
+	background-position: left -156px;
+}
+.footer-service .ser-bg5 {
+	background-position: left -208px;
+}
+.footer-service .ser-bg6 {
+	background-position: left -260px;
+}
 
+/* 
+	右侧黑色fixed导航条（侧边栏 ）
+*/
+.toolbar-wrapper{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 37px;
+	height: 100%;
+	background-color: #2d2d2d;
+	z-index: 16;
+}
+.toolbar-wrapper .zc-operation-tabbox{
+	position: absolute;
+	top: 138px;
+	left: 0;
+	width: 100%;
+}
+.toolbar-wrapper .zc-operation-tabbox .tab-item{
+	position: relative;
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	color: #fff;
+	vertical-align: middle;
+	background-color: #2d2d2d;
+}
+.toolbar-wrapper .zc-operation-tabbox .tab-item:hover{
+	background-color: #f33;
+}
+.toolbar-wrapper .zc-operation-tabbox .tab-item:hover .iconfont{
+	background-color: #f33;
+} 
+.toolbar-wrapper .zc-operation-tabbox .tab-item .iconfont{
+	position: relative;
+	font-size: 20px;
+	text-align: center;
+	z-index: 15;
+	/* width:37px;
+	height:40px; */
 
+}
+.toolbar-wrapper .zc-operation-tabbox .tab-item .content-item{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 68px;
+	height: 38px;
+	font: 12px/38px "微软雅黑";
+	color: #fff;
+	text-align: center;
+	background-color: #f33;
+	z-index: 0;
+}
+/* 回到顶部 */
+.toolbar-wrapper .zc-toolbar-tool{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.toolbar-wrapper .zc-toolbar-tool .zc-feedback{
+	padding: 5px;
+	width: 27px;
+	height: 27px;
+	font: 12px/14px "微软雅黑";
+	color: #fff;
+}
+.toolbar-wrapper .zc-toolbar-tool .iconfont{
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+	cursor: pointer;
+}
+.toolbar-wrapper .zc-toolbar-tool .iconfont:hover{
+	background-color: #f33;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 二维码扫描 */
+.qrcode-box {
+	width: 136px;
+	height: 162px;
+	padding-top: 56px;
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	top: 300px;
+	margin-left: -746px;
+	background: url(../images/qr-code.png) no-repeat center;
+}
+.qrcode-box img {
+	vertical-align: middle;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 5px;
+}
+.qrcode-box p {
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: normal;
+	color: #fff;
+}
 
 
 

@@ -359,6 +359,7 @@
 	width: 70px;
 	height: 70px;
 	margin-right: 10px;
+	border: 2px solid #fff;
 }
 .zs-bread-crumbs .zs-deal-detail .zs-focus .zs-focus-thumb .zs-focus-list li img{
 	width: 70px;
@@ -1140,7 +1141,7 @@
 .auto-show-content .zs-sidebar{
 	position: fixed;
 	top: 38px;
-	left: 1074px;
+	left: 1111px;
 	width: 198px;
 	height: 13944px;
 	background-color: #fafafa;
@@ -1151,7 +1152,7 @@
 .auto-show-content .zs-sidebar .zs-quick-menu{
 	position: fixed;
 	top: 38px;
-	left: 1074px;
+	left: 1111px;
 	margin: 20px 0;
 	padding: 0 30px;
 	overflow: hidden;

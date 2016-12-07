@@ -39,7 +39,7 @@
 	color: #666;
 	font: 12px/29px "微软雅黑";
 }
-.cart-topbar .wrapper .zol-quick-menu li:hover a{
+.cart-topbar .wrapper .zol-quick-menu li:hover>a{
 	color: #c00;
 	text-decoration: underline;
 }
@@ -50,6 +50,9 @@
 	right: 10px;
 	top: 13px;
 	background: url(../images/topbar_ico.png) no-repeat 0 -45px;
+}
+.cart-topbar .wrapper .zol-quick-menu .top-goods-amount{
+	color: #c00;
 }
 .cart-topbar .wrapper .zol-quick-menu .zol-my-center,
 .cart-topbar .wrapper .zol-quick-menu .zol-mobil,
@@ -64,6 +67,7 @@
 	padding-right: 19px;
 	border-left: 1px solid #e6e6e6;
 	border-right: 1px solid #e6e6e6;
+	z-index: 15;
 }
 .cart-topbar .wrapper .zol-quick-menu .zol-my-center:hover .zol-my-center-bd,
 .cart-topbar .wrapper .zol-quick-menu .zol-mobil:hover .zol-mobile-bd,
@@ -83,9 +87,13 @@
 	padding: 0 10px;
 	background-color: #fff;
 }
+.cart-topbar .wrapper .zol-quick-menu .zol-my-center .zol-my-center-bd a:hover{
+	color: #c00;
+	text-decoration: underline;
+}
 .cart-topbar .wrapper .zol-quick-menu .zol-my-center .zol-my-center-bd a{
 	display: block;
-	width: 80px;
+	width: 100px;
 	height: 30px;
 }
 .cart-topbar .wrapper .zol-quick-menu .zol-mobil .zol-mobile-bd{

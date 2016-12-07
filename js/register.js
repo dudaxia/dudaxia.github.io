@@ -66,6 +66,7 @@ var register = {
 				$(this).parent().find('.right-tips').hide();
 				return;
 			}
+
 			//给input输入框自定义属性phoneNumber
 			$(this).attr( 'data-phoneNumberId',vPhoneNum );
 		});
@@ -141,15 +142,19 @@ var register = {
 	//点击注册按钮时
 	registerMember: function(){
 		var that = this;
+
 		//注册按钮被点击时
 		this.registerBtn.click(function(){
+
 			//data() 获取以data-开的自定义属性的值
 			var PhoneNumber = that.phoneNum.data('phonenumberid');
+
 			//passWord
 			var PassWord = that.passWord.data('passwordattr');
+
 			//读取cookie()
-			console.log( PhoneNumber,PassWord );
 			var registerInfo = $.cookie('zol_register') || '{}';
+
 			//将JSON字符串转化为JSON对象
 			registerInfo = JSON.parse( registerInfo );
 			
@@ -163,13 +168,14 @@ var register = {
 				$('.phone-number').parent().find('.wrong-tips').html('手机号已存在！');
 				return;
 			}
-			console.log( registerInfo );
+			//console.log( registerInfo );
+			
 			//写到cookie中
 			$.cookie('zol_register',JSON.stringify(registerInfo),{expires:10,path: '/'});
 
 			alert('添加成功');
 
-			console.log( JSON.parse( $.cookie('zol_register')) );
+			//console.log( JSON.parse( $.cookie('zol_register')) );
 		});
 	},
 
