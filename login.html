@@ -32,13 +32,23 @@
 						<a href="#">手机验证码登录</a>
 					</div>
 					<div class="login-common">
-						<div class="form-item">
-							<input type="text" class="item uesr-name" placeholder="手机号/邮箱/登录名"/>
+						<div class="form-item phone-num">
+							<input type="text" class="item user-name" placeholder="手机号/邮箱/登录名"/>
+							<ul class="registered">
+								<!-- <li>15900001111</li>
+								<li>15900001112</li>
+								<li>15900001113</li>
+								<li>15900001112</li>
+								<li>15900001113</li> -->
+							</ul>
 						</div>
 						<div class="form-item">
 							<input type="password" class="item pass-word" placeholder="密码"/>
 						</div>
 						<div class="form-other">
+							<label class="remember-psw">
+								<input type="checkbox" class="auto-login" checked/>自动登录
+							</label>
 							<a href="#">忘记密码？</a>
 						</div>
 						<div class="login-btn">
@@ -72,6 +82,7 @@
 		</div>  
 		
 		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/jquery.cookie.js"></script>
 		<script src="js/login.js"></script>
 	</body>
 </html>

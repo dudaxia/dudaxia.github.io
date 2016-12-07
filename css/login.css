@@ -14,6 +14,11 @@ html,body{
 .wrapper .header .logo{
 	float: left;
 }
+.wrapper .header .logo a {
+	display: block;
+	width: 360px;
+	height: 60px;
+}
 .wrapper .header .logo img{
 	float: left;
 	width: 182px;
@@ -84,6 +89,37 @@ html,body{
 .wrapper .login-form .login-layer .login-common{
 	padding-top: 20px; 
 }
+/*手机号输入框*/
+.wrapper .login-form .login-layer .login-common .phone-num {
+	position: relative;
+}
+.wrapper .login-form .login-layer .login-common .phone-num .registered{
+	display: none;
+	position: absolute;
+	top: 49px;
+	max-height: 75px;
+	left: 0;
+	width: 288px;
+	border: 1px solid #ccc;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.wrapper .login-form .login-layer .login-common .phone-num .registered li{
+	padding: 0 10px;
+	width: 268px;
+	height: 24px;
+	line-height: 24px;
+	color: #666;
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+.wrapper .login-form .login-layer .login-common .phone-num .registered li:last-child{
+	border-bottom: 0;
+}
+.wrapper .login-form .login-layer .login-common .phone-num .registered li:hover{
+	background-color: #ddd;
+}
 .wrapper .login-form .login-layer .login-common .form-item input{
 	width: 283px;
 	height: 38px;
@@ -96,6 +132,16 @@ html,body{
 .wrapper .login-form .login-layer .login-common .form-other{
 	font: 12px/32px "微软雅黑";
 	text-align: right;
+}
+.wrapper .login-form .login-layer .login-common .form-other .remember-psw {
+	height: 32px;
+	line-height: 32px;
+	font-family: "微软雅黑";
+	color: #333;
+	float: left;
+}
+.wrapper .login-form .login-layer .login-common .form-other .remember-psw input{
+	margin-right: 5px;
 }
 .wrapper .login-form .login-layer .login-common .form-other a{
 	color: #134ba0;

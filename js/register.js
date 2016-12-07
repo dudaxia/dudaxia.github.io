@@ -50,6 +50,7 @@ var register = {
 		//注册按钮点击时
 		this.registerMember();
 	},
+
 	//验证手机号
 	checkPhoneNum: function(){
 		var that = this;
@@ -59,16 +60,21 @@ var register = {
 
 		//失焦判断
 		this.phoneNum.blur(function(){
+
+			//获取输入的手机号
 			var vPhoneNum = that.phoneNum.val().trim();
+			
+			//信息提示
 			that.judgeTips( $(this),vPhoneNum );
 			if( !CPNum.test( vPhoneNum ) ){
 				$(this).parent().find('.wrong-tips').html('手机号格式不正确').show();
 				$(this).parent().find('.right-tips').hide();
 				return;
 			}
-
+			vPhoneNum = parseInt( vPhoneNum );
 			//给input输入框自定义属性phoneNumber
-			$(this).attr( 'data-phoneNumberId',vPhoneNum );
+			$(this).attr( 'data-phonenumberid',vPhoneNum );
+			//判断cookie中是否存在
 		});
 	},
 
@@ -78,7 +84,9 @@ var register = {
 
 		//失焦判断
 		this.inputCaptcha.blur(function(){
+			//获取值
 			var vInputCaptcha = that.inputCaptcha.val().trim();
+			//信息提示
 			that.judgeTips( $(this),vInputCaptcha );
 			if( vInputCaptcha != that.vCaptcha ){
 				$(this).parent().find('.wrong-tips').html('验证码不正确').show();
@@ -99,6 +107,7 @@ var register = {
 
 		//失焦判断
 		this.phoneCapture.blur(function(){
+			//获取短信验证码输入框的值
 			var vPCode = that.phoneCapture.val().trim();
 			that.judgeTips( $(this),vPCode );
 			if( vPCode != that.phoneCode ){
@@ -123,6 +132,7 @@ var register = {
 				$(this).parent().find('.right-tips').hide();
 				return;
 			}
+
 			//给密码输入框自定义属性password
 			$(this).attr( 'data-passWordAttr', that.vPsw);
 		});
@@ -142,13 +152,12 @@ var register = {
 	//点击注册按钮时
 	registerMember: function(){
 		var that = this;
-
 		//注册按钮被点击时
 		this.registerBtn.click(function(){
 
 			//data() 获取以data-开的自定义属性的值
 			var PhoneNumber = that.phoneNum.data('phonenumberid');
-
+			
 			//passWord
 			var PassWord = that.passWord.data('passwordattr');
 
@@ -157,25 +166,23 @@ var register = {
 
 			//将JSON字符串转化为JSON对象
 			registerInfo = JSON.parse( registerInfo );
-			
+
 			//判断手机号是否存在
 			if( !registerInfo[PhoneNumber] ){
+				//不存在写入
 				registerInfo[PhoneNumber]={
 					'phoneNumberId':PhoneNumber,
 					'passWordAttr':PassWord
 				};
 			}else{
-				$('.phone-number').parent().find('.wrong-tips').html('手机号已存在！');
+				alert( '手机号已注册！' );
 				return;
 			}
-			//console.log( registerInfo );
 			
 			//写到cookie中
 			$.cookie('zol_register',JSON.stringify(registerInfo),{expires:10,path: '/'});
 
 			alert('添加成功');
-
-			//console.log( JSON.parse( $.cookie('zol_register')) );
 		});
 	},
 

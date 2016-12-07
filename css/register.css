@@ -14,6 +14,11 @@ html,body{
 .wrapper .header .logo{
 	float: left;
 }
+.wrapper .header .logo a {
+	display: block;
+	width: 360px;
+	height: 60px;
+}
 .wrapper .header .logo img{
 	float: left;
 	width: 182px;

@@ -1422,7 +1422,18 @@
 	text-decoration: underline;
 }
 
-
+/* QQ对话框 */
+.my-qq-dialog{
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -293px;
+	width: 586px;
+	height: 510px;
+	overflow: hidden;
+	background: url( ../images/qq-dialog-bg.png ) no-repeat;
+	z-index: 20;
+}
 
 
 
