@@ -398,6 +398,10 @@ $(function(){
 
 			//将对话框的值清为空
 			this.sendArea.val('');
+
+			//滚动条保持在最下方
+			var scrollT = this.dialogShow[0].scrollHeight;
+			this.dialogShow.scrollTop( scrollT );
 		},
 		//点击关闭按钮。对话框隐藏
 		close: function(){

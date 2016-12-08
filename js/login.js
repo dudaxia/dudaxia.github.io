@@ -134,7 +134,7 @@ $(function(){
 
 				//获取选择的手机号
 				var phone = parseInt( $(this).html() );
-				console.log( phone );
+				
 				//填充到手机号输入框中
 				that.phoneNumInput.val( phone );
 
