@@ -8,7 +8,6 @@
 $(function(){
 		var myAudio = document.querySelector('#my-audio');
 		var myAudioBtn = document.getElementsByClassName('music-logo')[0];
-
 		myAudioBtn.onclick = function(){
 			if(myAudio.paused){
 	            myAudio.play();
@@ -17,7 +16,7 @@ $(function(){
 	        }
 		}
 		var swipediv = new Swiper('.swiper-container',{
-			loop:false,
+			loop:true,
 			direction:'vertical',
 			onInit:function(swiper){
 				swiperAnimateCache(swiper);
