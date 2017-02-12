@@ -9,9 +9,6 @@ $(function(){
 		var myAudio = document.querySelector('#my-audio');
 		var myAudioBtn = document.getElementsByClassName('music-logo')[0];
 
-		myAudio.src="img/happy.mp3";
-		myAudio.play();
-
 		myAudioBtn.onclick = function(){
 			if(myAudio.paused){
 	            myAudio.play();
