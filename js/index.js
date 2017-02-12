@@ -16,7 +16,7 @@ $(function(){
 	        }
 		}
 		var swipediv = new Swiper('.swiper-container',{
-			loop:true,
+			loop:false,
 			direction:'vertical',
 			onInit:function(swiper){
 				swiperAnimateCache(swiper);
