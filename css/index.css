@@ -228,24 +228,28 @@ img {
   top: 8.066667rem;
   left: 2.866667rem;
 }
+
 .swiper-container .slide3 .slide3_3 {
     position: absolute;
-    top: 700px;
-    left: 530px;
-    width: 60px;
+    bottom: 20%;
+    left: 50%;
+    margin-left: -1.066667rem;
+    width: 2.133333rem;
     animation: zoomB 0.5s linear infinite alternate;
     -webkit-animation: zoomB 0.5s linear infinite alternate;
 }
 @keyframes zoomB {
   from {
-    top: 700px;
-    left: 530px;
-    width: 60px;
+    bottom: 20%;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
   }
   to {
-    top: 695px;
-    left: 525px;
-    width: 70px;
+    bottom: 19%;
+    left: 50%;
+    width: 120px;
+    margin-left: -60px;
   }
 }
 @-webkit-keyframes zoomB {
